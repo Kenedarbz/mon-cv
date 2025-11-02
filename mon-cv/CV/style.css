@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="style.css">
+
+/* ==== Réinitialisation de base ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== Styles généraux ==== */
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #F9F9F9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.site-header .photo {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    width: 150px;
+}
+
+.mail-icon {
+    position: relative;
+    top: 10px;
+    
+}
+
+h2 {
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.job {
+    margin-bottom: 25px;
+
+}
+
+.job h3 {
+    color: #222;
+    font-size: 1.1rem;
+}
+
+.job .dates {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.site-footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
