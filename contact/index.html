@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="../cv/style.css">
+
+
+
+<section class="contact">
+  <h2>Contactez moi</h2>
+  
+  <form action="https://httpbin.org/post" method="post" target="_blank">
+
+  <p>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+  </p>
+
+  <div class="radio-group">
+    <label>Vous êtes :</label>
+    <label>
+      <input type="radio" name="type" value="particulier" checked>
+      Particulier
+    </label>
+    <label>
+      <input type="radio" name="type" value="professionnel">
+      Professionnel
+    </label>
+  </div>
+
+  <p>
+    <label for="sujet">Sujet :</label>
+    <select id="sujet" name="sujet">
+      <option value="">-- Choisissez --</option>
+      <option value="question">Question</option>
+      <option value="projet">Projet</option>
+      <option value="autre">Autre</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </p>
+
+  <p>
+    <button type="submit">Envoyer</button>
+    <button type="reset">Effacer</button>
+  </p>
+
+</form>

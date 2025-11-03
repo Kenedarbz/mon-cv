@@ -1,0 +1,14 @@
+/* Aligner correctement les boutons radio et leur texte */
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* espace horizontal entre les deux options */
+  margin-bottom: 10px;
+}
+
+/* Pour que le texte et le bouton soient bien centrés */
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
