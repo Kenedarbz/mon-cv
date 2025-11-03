@@ -1,0 +1,193 @@
+:root {
+    --vert-clair: #E8F5E9;
+    /* fond principal */
+    --beige-doux: #F1E9DB;
+    /* section secondaire */
+    --vert-sauge: #A5C9A1;
+    /* accent / footer */
+    --texte-contrast: #2F4F4F;
+    /* couleur texte */
+}
+
+/* ==== Réinitialisation de base ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==== Styles généraux ==== */
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--texte-contrast);
+    background-color: var(--vert-clair);
+    padding: 20px;
+}
+
+/* ==== Conteneur principal (carte) ==== */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: transparent;
+    /* laisse apparaître le fond du parent (section) */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+/* ==== Section beige (fond visible) ==== */
+.section-beige {
+    background-color: var(--beige-doux);
+    border-radius: 8px;
+    padding: 18px;
+}
+
+/* ==== Autres styles (inchangés) ==== */
+.site-header {
+    display: flex; /* active la grille*/
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* crée 1 a 2 colonnes selon dispo taille*/
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.site-header .photo {
+    border-radius: 20%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    max-width: 150px;
+}
+
+.mail-icon {
+    position: relative;
+    top: 10px;
+}
+
+h2 {
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.job {
+    margin-bottom: 25px;
+}
+
+.job h3 {
+    color: #222;
+    font-size: 1.1rem;
+}
+
+.job .dates {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.site-footer {
+    text-align: center; /* alignement */
+    background-color: var(--vert-sauge);
+    color: rgb(255, 1, 1); /* couleur */
+    font-size: 0.9rem; /* taille de caractère calculé a partir du font size dans le html */
+    font-family: 'Courier New', Courier, monospace; /* police de caractère */
+    font-style: italic;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+site-header h1 {
+    font-size: clamp(1.4rem, 2vw + 1rem, 2rem); /*clamp rend les tailles txt fluide sans mediaqueries*/
+    color: #2F4F4F;
+}
+
+.site-header p {
+    font-size: clamp(0.9rem, 1vw + 0.6rem, 1rem);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #DDD;
+    padding: 12px;
+    vertical-align: top;
+}
+
+thead th {
+    background-color: #f6f8fa;
+    font-weight: 700;
+    text-align: left;
+    color: #222;
+}
+
+tbody tr:nth-child (even) {
+    background-color: #fbfcfd
+}
+
+td ul {
+    margin: 6px 0 0 18px;
+    padding: 0;
+    list-style-position: outside;
+}
+
+table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+td p {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+}
+
+.section-zen {
+    background-color: var(--vert-sauge);
+    /* utilise la couleur définie dans root*/
+    border-radius: 8px;
+    padding: 18px;
+    /* garde de l'espace a l'intérieur du bloc*/
+
+}
+
+
+
+@media (max-width: 768px) { /* si largeur inf a 768pixel il aplliquera les styles entre { } */
+  body {
+    padding: 10px;
+  }
+
+  .site-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .site-header .photo {
+    width: 80px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
